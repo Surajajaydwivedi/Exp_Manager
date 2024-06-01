@@ -1,0 +1,48 @@
+**Module: client.py**  
+**Author:** Suraj Dwivedi  
+**Date:** May 2024
+
+**Description:**  
+This module contains the Client class, which provides functionality to interact with the Telegram API using Telethon.
+
+**Dependencies:**  
+- telethon  
+- dotenv
+
+**Usage:**  
+Example usage:  
+client = Client()  
+client.create_instance()  
+await client.get_user_details()  
+await client.send_message('Hello, world!')  
+await client.get_messages()
+
+---
+
+**Class: Client**
+
+**Attributes:**
+- _api_id (str): The API ID obtained from environment variables.
+- _api_hash (str): The API hash obtained from environment variables.
+- _contacts (dict): A dictionary to store contact information.
+- _client (TelegramClient): An instance of the Telegram client.
+
+**Methods:**
+
+1. **\_\_init\_\_:**  
+   Initializes the Client class with API credentials and contact information.
+
+2. **create_instance():**  
+   Creates a new instance of the Telegram client.
+
+3. **get_user_details():**  
+   Fetches and prints details of the currently authenticated user.
+
+4. **send_message(message='Default Message', to=None):**  
+   Sends a message to a user or chat.
+
+5. **send_doc(doc, to=None):**  
+   Sends a document to a user or chat.
+
+6. **get_messages(request=None):**  
+   Fetches and prints messages from the 'me' chat.

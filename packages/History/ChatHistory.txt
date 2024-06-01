@@ -1,0 +1,42 @@
+{
+    "918933785": {
+        "name": "Suraj Ajay Dwivedi",
+        "last_message_id": null,
+        "is_exp": true
+    },
+    "777000": {
+        "name": "Telegram",
+        "last_message_id": null,
+        "is_exp": false
+    },
+    "6797522925": {
+        "name": "SManagerFund",
+        "last_message_id": null,
+        "is_exp": false
+    },
+    "93372553": {
+        "name": "BotFather",
+        "last_message_id": null,
+        "is_exp": false
+    },
+    "5348549792": {
+        "name": "Diksha \ud83d\ude02",
+        "last_message_id": null,
+        "is_exp": false
+    },
+    "1029775095": {
+        "name": "Shubham B12 Jiit",
+        "last_message_id": null,
+        "is_exp": false
+    },
+    "977583758": {
+        "name": "Farhan Firdous A4 Re",
+        "last_message_id": null,
+        "is_exp": false
+    },
+    "-467783502": {
+        "name": "Core Team",
+        "last_message_id": null,
+        "is_exp": false
+    }
+}
