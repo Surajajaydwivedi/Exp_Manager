@@ -4,6 +4,9 @@ from packages.Utils.utils import convert_date
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+from telethon import functions, types
+
+
 
 # from ..Utils.constants import SUCCESS, FAILED, ME
 # from ..Utils.utils import convert_date
@@ -101,6 +104,29 @@ class Client:
             print(dialog.name, 'has ID', dialog.id)
             dialog_ids.append({'name':dialog.name,ID:dialog.id})
         return dialog_ids
+    
+    async def create_channel(self,request) -> str:
+        # title=request.title,
+        # about=request.about,
+        # megagroup=request.megagroup,
+        # for_import=request.for_import,
+        # forum=request.forum,
+        # geo_point=types.InputGeoPoint(
+        #     lat=request.lat,
+        #     long=request.long,
+        #     accuracy_radius=request.accuracy_radius
+        # ),
+        # address=request.address,
+        # ttl_period=request.ttl_period
+        if not request or not request['title']:
+            return FAILED
+        try:
+            result = await self._client(functions.channels.CreateChannelRequest(request))
+            print(result.stringify())
+            return SUCCESS
+        except Exception as e:
+            print(f"Error: {e}")
+            return FAILED
 
 # Example usage:
 # client = Client()
